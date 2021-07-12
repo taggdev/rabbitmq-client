@@ -1,0 +1,13 @@
+app:
+  rabbitmq:
+    queue: SBMTEST
+    queue_2: SBM_TEST
+
+spring:
+  rabbitmq:
+    addresses: 10.95.108.188:5672,10.95.108.189:5672
+    username: snmpAlarm
+    password: snmpAlarm
+
+server:
+  port: 18082

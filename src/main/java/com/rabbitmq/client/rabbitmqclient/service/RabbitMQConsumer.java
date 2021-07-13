@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class RabbitMQConsumer {
 
-    @RabbitListener(queues = "${app.rabbitmq.queue}")
+    @RabbitListener(queues = {"${app.rabbitmq.queue01}","${app.rabbitmq.queue02}","${app.rabbitmq.queue03}"})
     public void receivedMessage(String json) {
         System.out.printf("Received Message From RabbitMQ: %s%n%n", json);
 
@@ -15,6 +15,7 @@ public class RabbitMQConsumer {
         for (String key : jObject.keySet()) {
             System.out.printf("%s : %s%n", key, jObject.getString(key));
         }
+        System.out.printf("==End==%n");
     }
 
 }

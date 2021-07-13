@@ -1,6 +1,8 @@
 app:
   rabbitmq:
-    queue: SBMTEST
+    queue01: SBMTEST
+    queue02: SBMFCR
+    queue03: SBMENGINE
 
 spring:
   rabbitmq:

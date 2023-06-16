@@ -3,12 +3,12 @@ app:
     queue01: SBMTEST
     queue02: SBMFCR
     queue03: SBMENGINE
+    exchange: OMX-Exchange
 
 spring:
   rabbitmq:
-    addresses: 10.95.108.188:5672,10.95.108.189:5672
+#    host: sbmpm-rabbitmq-ha.sbmpm.svc
+#    port: 5672
+    addresses: sbmpm-rabbitmq-ha.sbmpm.svc:5672
     username: snmpAlarm
     password: snmpAlarm
-
-server:
-  port: 18082

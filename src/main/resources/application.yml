@@ -9,6 +9,6 @@ spring:
   rabbitmq:
 #    host: sbmpm-rabbitmq-ha.sbmpm.svc
 #    port: 5672
-    addresses: sbmpm-rabbitmq-ha.sbmpm.svc:5672
+    addresses: sbmrbt-rabbitmq-ha.sbmrbt.svc:5672
     username: snmpAlarm
     password: snmpAlarm

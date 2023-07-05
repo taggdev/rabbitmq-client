@@ -75,7 +75,7 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-buffer-size: "64k"
 spec:
   rules:
-    - host: sbm-rabbitmq-client-dev.sbmpm.tyb.rft
+    - host: sbm-rabbitmq-client-dev.sbmrbt.tyb.rft
       http:
         paths:
           - backend:
